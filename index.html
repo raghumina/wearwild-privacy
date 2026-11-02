@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>WearWild Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f6f2e8;--fg:#1b1a16;--muted:#5d5a50;--accent:#b3471f;--rule:#e2dccb;--card:#fbf9f3;--chip:#eee8d8}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#07110c;--fg:#f3ecd8;--muted:#b9b2a0;--accent:#e8743a;--rule:#1d2b22;--card:#0b1a12;--chip:#13261a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#07110c;--fg:#f3ecd8;--muted:#b9b2a0;--accent:#e8743a;--rule:#1d2b22;--card:#0b1a12;--chip:#13261a;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:"Instrument Sans","Avenir Next",system-ui,sans-serif;font-size:17px;line-height:1.6;margin:0;padding-block:48px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:42rem;margin:0 auto}
+.mark{display:inline-grid;grid-template-columns:repeat(9,6px);grid-auto-rows:6px;gap:0;margin-bottom:28px}
+.mark i{display:block}
+h1{font-size:clamp(28px,5vw,38px);font-weight:600;line-height:1.15;letter-spacing:-.01em;margin:0 0 6px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 36px}
+h2{font-size:20px;font-weight:600;margin:40px 0 10px;letter-spacing:-.005em}
+p,li{margin:0 0 12px}
+ul{padding-left:1.2em}
+.plain{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:18px 20px;margin:0 0 8px}
+.plain strong{color:var(--accent)}
+table{border-collapse:collapse;width:100%;font-size:16px;margin:8px 0 16px}
+th,td{text-align:left;vertical-align:top;padding:10px 10px 10px 0;border-bottom:1px solid var(--rule)}
+th{font-weight:600;color:var(--muted);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+code{background:var(--chip);padding:1px 6px;border-radius:5px;font-size:.92em}
+footer{margin-top:48px;color:var(--muted);font-size:15px;border-top:1px solid var(--rule);padding-top:18px}
+</style>
+</head>
+<body>
+<main>
+<div class="mark" aria-hidden="true">
+<i style="background:var(--fg)"></i><i></i><i></i><i></i><i style="background:var(--fg)"></i><i></i><i></i><i></i><i style="background:var(--accent)"></i>
+<i style="background:var(--fg)"></i><i></i><i></i><i></i><i style="background:var(--fg)"></i><i></i><i></i><i></i><i style="background:var(--accent)"></i>
+<i style="background:var(--fg)"></i><i></i><i style="background:var(--fg)"></i><i></i><i style="background:var(--fg)"></i><i></i><i style="background:var(--accent)"></i><i></i><i style="background:var(--accent)"></i>
+<i style="background:var(--fg)"></i><i style="background:var(--fg)"></i><i></i><i style="background:var(--fg)"></i><i style="background:var(--fg)"></i><i style="background:var(--accent)"></i><i></i><i style="background:var(--accent)"></i><i style="background:var(--accent)"></i>
+<i style="background:var(--fg)"></i><i></i><i></i><i></i><i style="background:var(--fg)"></i><i style="background:var(--accent)"></i><i></i><i></i><i style="background:var(--accent)"></i>
+</div>
+<h1>WearWild Privacy Policy</h1>
+<p class="sub">For the WearWild browser extension, version 1.2.3 · Effective 2 November 2026</p>
+
+<div class="plain"><p><strong>The short version.</strong> WearWild runs entirely inside your browser. It has no servers, no accounts and no analytics, and it makes no network requests of its own. Nothing you do with it is sent to us or to anyone else. Your settings live in your browser's local extension storage and disappear when you uninstall it.</p></div>
+
+<h2>What WearWild does</h2>
+<p>WearWild shows a small pixel-art companion, based on a real threatened species, on fashion shopping pages. To do that, a content script runs on the pages you visit and checks, on your device, whether the page looks like a clothing product page. On those pages it reads the product title, price and the printed fibre composition from the page text so the companion can comment, count what goes into your bag and describe the fibres. This reading happens in your browser and the text is not stored beyond the current session, except for the running counts described below.</p>
+
+<h2>What is stored, and where</h2>
+<p>Everything WearWild remembers is kept in Chrome's local extension storage on your own device (<code>chrome.storage.local</code>). It is never uploaded. Specifically:</p>
+<table>
+<tr><th>Stored</th><th>Why</th></tr>
+<tr><td>Which companion you chose and the name you gave it</td><td>To show the right animal and address it by name</td></tr>
+<tr><td>Your monthly goal amount and currency</td><td>To relate what you add to your bag to the number you set</td></tr>
+<tr><td>Behaviour settings (rhythm, corner, second-hand search, reduced motion, sleep-on-it hours, mute)</td><td>To behave the way you asked</td></tr>
+<tr><td>Your pledge settings: a percentage, the organisation you named, and the notes you keep of what you have given</td><td>These are your own notes. WearWild never moves money, never charges you and never donates on your behalf</td></tr>
+<tr><td>Friends</td><td>Marked "coming soon" and switched off in this version. It stores nothing. When it ships, this page will describe it first</td></tr>
+<tr><td>Running counts of items noted and fibres seen, and pending sleep-on-it reminders</td><td>To keep count during a shopping session and to remind you later if you asked</td></tr>
+<tr><td>Which sites you have hidden the companion on</td><td>So it stays hidden where you don't want it</td></tr>
+</table>
+<p>You can clear all of this at any time with <strong>Reset everything</strong> in WearWild's settings, or by removing the extension.</p>
+
+<h2>What leaves your browser</h2>
+<p>Nothing, unless you click a link. WearWild's own pages use a typeface bundled inside the extension, so opening the settings, the popup or the habitat makes no request either. WearWild contains links to the sources behind each animal's facts, to conservation organisations' own pages, and, if you turn on the second-hand search, to a search on eBay or Depop using the name of the item you were looking at. When you click one, your browser opens that site like any other link and that site's own privacy policy applies. WearWild does not open these on its own and does not know whether you followed them.</p>
+
+<h2>Permissions, and why each one is there</h2>
+<ul>
+<li><strong>Access to the pages you visit</strong> (<code>http://*/*</code>, <code>https://*/*</code>): to tell, on your device, whether a page is a clothing shop and to read the product details shown on it. It does not read, store or send page content from other kinds of sites.</li>
+<li><strong>Storage</strong>: to keep the settings listed above, locally.</li>
+<li><strong>Alarms</strong> and <strong>notifications</strong>: for the optional "sleep on it" reminder, which pings you later about an item you chose to think over.</li>
+</ul>
+
+<h2>Payments and the locked tiers</h2>
+<p>WearWild is free. Two companion tiers are shown as locked; at the moment they lead to a waitlist and no payment is taken inside the extension. The extension does not process payments and never will move money on your behalf. A WearWild adoption is a virtual one inside the extension, not an adoption with any conservation organisation.</p>
+
+<h2>Children</h2>
+<p>WearWild is not directed at children under 13 and does not knowingly collect information from anyone, of any age.</p>
+
+<h2>Changes</h2>
+<p>If a future version changes what is stored or where, this page will be updated and the effective date above will change. The version number at the top tells you which release it describes.</p>
+
+<footer>WearWild is made by Group 1, Inventing Futures, University of Sydney. Questions about this policy can be sent through the Support tab on the WearWild listing in the Chrome Web Store.</footer>
+</main>
+</body>
+</html>
