@@ -4,12 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>WearWild Privacy Policy</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap">
 <style>
 :root{--bg:#f6f2e8;--fg:#1b1a16;--muted:#5d5a50;--accent:#b3471f;--rule:#e2dccb;--card:#fbf9f3;--chip:#eee8d8}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#07110c;--fg:#f3ecd8;--muted:#b9b2a0;--accent:#e8743a;--rule:#1d2b22;--card:#0b1a12;--chip:#13261a;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#07110c;--fg:#f3ecd8;--muted:#b9b2a0;--accent:#e8743a;--rule:#1d2b22;--card:#0b1a12;--chip:#13261a;color-scheme:dark}
-body{background:var(--bg);color:var(--fg);font-family:"Instrument Sans","Avenir Next",system-ui,sans-serif;font-size:17px;line-height:1.6;margin:0;padding-block:48px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body{background:var(--bg);color:var(--fg);font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.6;margin:0;padding-block:48px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 main{max-width:42rem;margin:0 auto}
 .mark{display:inline-grid;grid-template-columns:repeat(9,6px);grid-auto-rows:6px;gap:0;margin-bottom:28px}
 .mark i{display:block}
@@ -24,6 +23,7 @@ table{border-collapse:collapse;width:100%;font-size:16px;margin:8px 0 16px}
 th,td{text-align:left;vertical-align:top;padding:10px 10px 10px 0;border-bottom:1px solid var(--rule)}
 th{font-weight:600;color:var(--muted);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
 code{background:var(--chip);padding:1px 6px;border-radius:5px;font-size:.92em}
+a{color:var(--accent)}
 footer{margin-top:48px;color:var(--muted);font-size:15px;border-top:1px solid var(--rule);padding-top:18px}
 </style>
 </head>
@@ -37,46 +37,72 @@ footer{margin-top:48px;color:var(--muted);font-size:15px;border-top:1px solid va
 <i style="background:var(--fg)"></i><i></i><i></i><i></i><i style="background:var(--fg)"></i><i style="background:var(--accent)"></i><i></i><i></i><i style="background:var(--accent)"></i>
 </div>
 <h1>WearWild Privacy Policy</h1>
-<p class="sub">For the WearWild browser extension, version 1.2.3 · Effective 2 November 2026 · Last updated 7 November 2026</p>
+<p class="sub">For the WearWild browser extension, version 1.2.4 · Effective 7 November 2026</p>
 
-<div class="plain"><p><strong>The short version.</strong> WearWild runs entirely inside your browser. It has no servers, no accounts and no analytics, and it makes no network requests of its own. Nothing you do with it is sent to us or to anyone else. Your settings live in your browser's local extension storage and disappear when you uninstall it.</p></div>
+<div class="plain"><p><strong>The short version.</strong> WearWild runs entirely inside your browser. On clothing shop pages it reads the product details shown on the page, and it keeps a few records on your device so your companion can do its job. None of it is sent to us or to anyone else. There are no servers, no accounts and no analytics, and WearWild makes no network requests of its own. We cannot see your data, so we cannot sell it, share it or lose it.</p></div>
 
 <h2>What WearWild does</h2>
-<p>WearWild shows a small pixel-art companion, based on a real threatened species, on fashion shopping pages. To do that, a content script runs on the pages you visit and checks, on your device, whether the page looks like a clothing product page. On those pages it reads the product title, price and the printed fibre composition from the page text so the companion can comment, count what goes into your bag and describe the fibres. This reading happens in your browser and the text is not stored beyond the current session, except for the running counts described below.</p>
+<p>WearWild shows a small pixel-art companion, based on a real threatened species, on fashion shopping pages. It comments on the product you are looking at, keeps count of what goes into your bag, describes the fibres printed on the label, and asks you one question before you buy. It never blocks a purchase.</p>
 
-<h2>What is stored, and where</h2>
-<p>Everything WearWild remembers is kept in Chrome's local extension storage on your own device (<code>chrome.storage.local</code>). It is never uploaded. Specifically:</p>
+<h2>Information WearWild handles</h2>
+<p>All of the handling below happens on your own device.</p>
+<p><strong>What it reads from the pages you visit.</strong> A content script runs on the pages you open and checks whether the page is a clothing shop page. On a page that is not, it does nothing further and keeps nothing. On a clothing shop page it reads the product name, the price, the address of the product picture, the printed fibre composition and the shop's site name. It notices when you press an add-to-bag or checkout button, and it counts the time you spend actively shopping that day.</p>
+<p><strong>What it keeps.</strong></p>
 <table>
-<tr><th>Stored</th><th>Why</th></tr>
+<tr><th>Kept on your device</th><th>Why</th></tr>
 <tr><td>Which companion you chose and the name you gave it</td><td>To show the right animal and address it by name</td></tr>
 <tr><td>Your monthly goal amount and currency</td><td>To relate what you add to your bag to the number you set</td></tr>
-<tr><td>Behaviour settings (rhythm, corner, second-hand search, reduced motion, sleep-on-it hours, mute)</td><td>To behave the way you asked</td></tr>
+<tr><td>Behaviour settings (rhythm, corner, second-hand search, reduced motion, sleep-on-it hours, mute, sound)</td><td>To behave the way you asked</td></tr>
+<tr><td>Wardrobe notes, if you type any</td><td>So the companion can mention when you already own something similar</td></tr>
+<tr><td>What is in your bag at each shop: item name, price, kind of garment, time added, and the shop's site name</td><td>To keep count and to ask about the bag as a whole</td></tr>
+<tr><td>Things you chose to sleep on: item name, price, picture address, fibres, the page address, and when to remind you</td><td>To remind you later and let you go back to the page</td></tr>
+<tr><td>Purchases you confirmed: a short summary, the total, the shop's site name and the time</td><td>To show what you bought against your goal. Only purchases you confirm are counted</td></tr>
 <tr><td>Your pledge settings: a percentage, the organisation you named, and the notes you keep of what you have given</td><td>These are your own notes. WearWild never moves money, never charges you and never donates on your behalf</td></tr>
-<tr><td>Friends</td><td>Marked "coming soon" and switched off in this version. It stores nothing. When it ships, this page will describe it first</td></tr>
-<tr><td>Running counts of items noted and fibres seen, and pending sleep-on-it reminders</td><td>To keep count during a shopping session and to remind you later if you asked</td></tr>
-<tr><td>Which sites you have hidden the companion on</td><td>So it stays hidden where you don't want it</td></tr>
+<tr><td>Time spent shopping today, how well your companion knows you, and which stickers and visitors you have seen</td><td>To pace the companion and show your progress</td></tr>
+<tr><td>Which sites you have hidden the companion on, or asked it to appear on</td><td>So it stays hidden, or shows, where you chose</td></tr>
+<tr><td>Pages you flagged with "Didn't catch that add": the site and page address</td><td>A note that the companion missed something there. In this version it stays on your device</td></tr>
+<tr><td>Friends</td><td>Marked "coming soon" and switched off in this version. It stores nothing</td></tr>
 </table>
-<p>You can clear all of this at any time with <strong>Reset everything</strong> in WearWild's settings, or by removing the extension.</p>
+<p><strong>Where it is kept.</strong> In Chrome's local extension storage on your device (<code>chrome.storage.local</code>). It is not synced to your Google account and never uploaded. On shop pages WearWild also sets a few short-lived markers in that page's own browser storage, such as when a visiting animal last appeared or whether today's story has been told. They hold no personal details.</p>
 
-<h2>What leaves your browser</h2>
-<p>Nothing, unless you click a link. WearWild's own pages use a typeface bundled inside the extension, so opening the settings, the popup or the habitat makes no request either. WearWild contains links to the sources behind each animal's facts, to conservation organisations' own pages, and, if you turn on the second-hand search, to a search on eBay or Depop using the name of the item you were looking at. When you click one, your browser opens that site like any other link and that site's own privacy policy applies. WearWild does not open these on its own and does not know whether you followed them.</p>
+<h2>How the information is used</h2>
+<p>Only to run the companion: to choose what it says, keep your counts, show your goal and remind you about items you set aside. It is not used for advertising, profiling, analytics or any purpose unrelated to that. No person reads it, because it never reaches us.</p>
+
+<h2>Sharing and selling</h2>
+<p>WearWild does not sell, share or transfer your information to anyone. Nothing leaves your browser unless you click a link.</p>
+<p>WearWild's own pages use a typeface bundled inside the extension, so opening the settings, the popup or the habitat makes no request either. WearWild contains links to the sources behind each animal's facts, to conservation organisations' own pages, and, if you turn on the second-hand search, to a search on a resale site such as eBay, Depop, Vinted or Vestiaire Collective using the name of the item you were looking at. When you click one, your browser opens that site like any other link and that site's own privacy policy applies. WearWild does not open these on its own and does not know whether you followed them.</p>
+
+<h2>Keeping and deleting your information</h2>
+<p>The records stay on your device until you remove them. You have three ways to do that:</p>
+<ul>
+<li><strong>Start over</strong>, in WearWild's settings, clears the shopping records: bags, items you set aside, confirmed purchases, time and bond.</li>
+<li><strong>Erase everything</strong>, in WearWild's settings, clears all of it, including your companion, goal, wardrobe notes and settings.</li>
+<li>Removing the extension from Chrome deletes everything it kept.</li>
+</ul>
+
+<h2>Security</h2>
+<p>Because nothing is transmitted, there is nothing in transit to intercept. The records sit in Chrome's own extension storage inside your browser profile, protected by the same sign-in that protects the rest of your browser.</p>
+
+<h2>Limited Use</h2>
+<p>WearWild's use of information it reads from the pages you visit adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. The information is used only to provide the single purpose described above.</p>
 
 <h2>Permissions, and why each one is there</h2>
 <ul>
-<li><strong>Access to the pages you visit</strong> (<code>http://*/*</code>, <code>https://*/*</code>): to tell, on your device, whether a page is a clothing shop and to read the product details shown on it. It does not read, store or send page content from other kinds of sites.</li>
-<li><strong>Storage</strong>: to keep the settings listed above, locally.</li>
+<li><strong>Access to the pages you visit</strong> (<code>http://*/*</code>, <code>https://*/*</code>): to tell, on your device, whether a page is a clothing shop and to read the product details shown on it. Shops are not a fixed list, so the check has to be possible on any site. It does not store or send page content from other kinds of sites.</li>
+<li><strong>Storage</strong>: to keep the records listed above, locally.</li>
 <li><strong>Alarms</strong> and <strong>notifications</strong>: for the optional "sleep on it" reminder, which pings you later about an item you chose to think over.</li>
 </ul>
 
 <h2>Payments and the locked tiers</h2>
-<p>WearWild is free. Two companion tiers are shown as locked. In this version a button unlocks them at no cost, on your own device: no payment is taken and no details are asked for. This version does not process payments. WearWild never charges you or donates on your behalf. A WearWild adoption is a virtual one inside the extension, not an adoption with any conservation organisation.</p>
+<p>WearWild is free. Two companion tiers start locked. In this version a button in the settings opens them at no cost, on your own device: no payment is taken and no details are asked for. This version does not process payments. WearWild never charges you or donates on your behalf. A WearWild adoption is a virtual one inside the extension, not an adoption with any conservation organisation.</p>
+<p>We plan for later versions to open the locked tiers as you use WearWild, for example as you spend time with your companion or stay within the goal you set. That would be worked out on your device from the records listed above, and would send nothing anywhere.</p>
 
 <h2>Children</h2>
-<p>WearWild is not directed at children under 13 and does not knowingly collect information from anyone, of any age.</p>
+<p>WearWild is not directed at children under 13. It does not ask for or receive personal information from anyone, of any age.</p>
 
 <h2>Future versions and changes</h2>
-<p>WearWild will keep changing as the people who use it tell us what they want from it. This page describes version 1.2.3 exactly, and the version number at the top tells you which release it covers.</p>
-<p>Today WearWild collects nothing. If a later version starts to collect any information, send anything off your device, or add a paid feature, three things will happen before that version reaches you:</p>
+<p>WearWild will keep changing as the people who use it tell us what they want from it. This page describes version 1.2.4 exactly, and the version number at the top tells you which release it covers.</p>
+<p>Today nothing WearWild reads or keeps leaves your device. If a later version starts to send any information off your device, collect something new, or add a paid feature, three things will happen before that version reaches you:</p>
 <ul>
 <li>This page will be updated to say what is collected, why, where it goes and how long it is kept, and the dates at the top will change.</li>
 <li>The data disclosure on the WearWild listing in the Chrome Web Store will be updated to match.</li>
